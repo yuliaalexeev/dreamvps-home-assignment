@@ -1,0 +1,20 @@
+@import "variables.scss";
+
+.form {
+  display: grid;
+  input {
+    margin-bottom: 15px;
+  }
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  &-btn {
+    color: $color-white;
+    background-color: $color-secondary;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+  }
+}

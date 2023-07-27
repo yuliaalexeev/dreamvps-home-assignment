@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import "variables.scss";
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  line-height: 1.5;
+}
+
+body {
+  background: $gradient-start; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    $gradient-start,
+    $gradient-end
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    $gradient-start,
+    $gradient-end
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Roboto", sans-serif;
+  color: $color-primary;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h2,
+h3 {
+  color: $color-primary;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: $color-secondary;
+}
+
+textarea,
+input,
+button {
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 0 0px 1px $shadow-medium;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.title {
+  margin-top: 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn {
+  color: $color-white;
+  &-delete {
+    background: $color-quaternary;
+    margin-left: 10px;
+  }
+  &-edit {
+    background: $color-tertiary;
+    padding: 5px;
+    width: 60px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+}
+
+textarea:hover,
+input:hover,
+button:hover {
+  box-shadow: $shadow-hover;
+}
+
+button:active {
+  box-shadow: $shadow-dark;
+  transform: translateY(1px);
+}
+
+.wrapper {
+  width: 100%;
+  margin: 30px auto;
+  background: rgba($color-white, 0.5);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px $shadow-light;
+}

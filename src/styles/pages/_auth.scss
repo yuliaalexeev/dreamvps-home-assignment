@@ -1,0 +1,9 @@
+@import "../variables";
+
+.auth-wrapper {
+  max-width: 300px;
+  &-text {
+    margin-top: 12px;
+    display: block;
+  }
+}

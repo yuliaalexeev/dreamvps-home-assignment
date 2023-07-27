@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.user-post {
+  background: $color-bg-light;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  word-break: break-all;
+  &-buttons {
+    margin-top: 25px;
+  }
+  &-author {
+    display: block;
+    color: $color-grey;
+  }
+  p,
+  input {
+    margin-bottom: 5px;
+  }
+}

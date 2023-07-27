@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.add-new-post {
+  &-textarea {
+    height: 120px;
+    width: 100%;
+    resize: none;
+  }
+}
+
+.btn-add-post {
+  background-color: $color-secondary;
+  color: $color-white;
+  margin-top: 15px;
+}
